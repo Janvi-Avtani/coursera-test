@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, embed[type="application/pdf"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}</style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment Solution for Module 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"><style class="darkreader darkreader--sync" media="screen"></style>
+    <link rel="stylesheet" href="css/style.css"><style class="darkreader darkreader--sync" media="screen"></style>
+    <link href="https://fonts.googleapis.com/css?family=Source+Cursive" rel="stylesheet">
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}</style><style type="text/css"></style><style class="darkreader darkreader--sync" media="screen"></style></head>
+
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Food, LLC</h1></a>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse cc_cursor">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
+                        <li>
+                            <a href="#chicken-tile"><br class="hidden-xs"> Chicken</a>
+                        </li>
+                        <li>
+                            <a href="#beef-tile"><br class="hidden-xs"> Beef</a>
+                        </li>
+                        <li>
+                            <a href="#sushi-tile"><br class="hidden-xs"> Sushi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-content" class="container cc_cursor">
+        <h2 id="top-heading" class="text-center cc_cursor">Our Menu</h2>
+        <div id="home-tiles" class="row cc_cursor">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="chicken-tile">
+                    <section>
+                        <h3 class="text-center">Chicken</h3>
+                        <p>
+                            Among the many reasons that make Indian food a popular cuisine across the globe, one is the use of aromatic spices that make the meal an absolute treat. Yes, it could also be hot and spicy for some, but if you can get past that then you will find it hard to resist the various kinds of curries and stir-fries that grace the Indian table. Indian cooking offers a beautiful melange of herbs and spices, and if your favourite meat is chicken, then there are many lip-smacking options for you to go all out and indulge from a host of chicken dishes like the classic butter chicken to regional ones like chicken chettinad or chicken 65. And if you are wondering how to go about preparing mouth-watering Indian chicken dishes at home, we've got you covered with some of the best chicken recipes here.
+                            Benefits Of Eating Chicken Chicken cooked in fiery desi flavors is a dream come true for all non-vegetarians. Apart from being a very versatile meat when it comes to cooking, chicken also promises great health benefits. Did you know that the human body can derive about 30 different nutritional substances from just 100 grams of chicken? Apart from that there are other lesser-known benefits of Chicken like: Chicken is a great source of lean, low fat protein.It is also packed with selenium, a chemical known for its anti-cancer properties.The skin of the chicken is known to contain the maximum fat; therefore skinned chicken is preferred by many.Now scroll down for 28 easy-to-cook, fuss-free and exciting Indian chicken recipes that are sure to light up your evenings. We're talking tandoori Mughlai tikkas, fragrant Nawabi biryani and more.
+                           
+                        
+                        </p>
+                        <p>
+                            (End of Chicken section) <a href="#top-heading">Back to Top</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 cc_cursor">
+                <div id="beef-tile">
+                    <section>
+                        <h3 class="text-center">Beef</h3>
+                        <p>
+                            Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of high-quality protein and nutrients.[2]
+                            Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is,[3] but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock. Meat from younger cows (calves) is called veal.
+                            Beef from steers and heifers is similar.[4] Depending on economics, the number of heifers kept for breeding varies. The meat from older bulls, because it is usually tougher, is frequently used for mince (known as ground beefs three largest consumers of beef; Uruguay, however, has the highest beef and veal consumption per capita, followed by Argentina and Brazil.                 Beef production has a high environmental impact per gram of protein.
+                            
+                        </p>
+                        <p>
+                            (End of Beef section) <a href="#top-heading">Back to Top</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12 cc_cursor">
+                <div id="sushi-tile">
+                    <section>
+                        <h3 class="text-center">Sushi</h3>
+                        <p>
+                          Sushi (すし, 寿司, 鮨, pronounced [sɯɕiꜜ] or [sɯꜜɕi]) is a Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanying a variety of ingredients (ネタ, neta), such as seafood, often raw, vegetables, and occasionally tropical fruits. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari (しゃり), or sumeshi (酢飯).[1]
+                          Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.
+                          Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine that consists of thinly sliced raw fish, or occasionally meat, and an optional serving of rice.[2]
+                          It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.
+                          It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish. Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine that consists of thinly sliced raw fish, or occasionally meat, and an optional serving of rice.[2] It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.
+
+
+                        </p>
+                        <p>
+                            (End of Sushi section) <a href="#top-heading">Back to Top</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="clearfix visible-lg-block"></div>
+
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body></html>
